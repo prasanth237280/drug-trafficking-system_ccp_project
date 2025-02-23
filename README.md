@@ -35,4 +35,4 @@ We’re building a software tool to:
 - Test with dummy data.
 
 ## License
-[Add a license if you want, e.g., MIT License—ask me if you need help choosing!]
+<<<<<<<<<<<<<<<<<<soon>>>>>>>>>>>>>>>>>>
