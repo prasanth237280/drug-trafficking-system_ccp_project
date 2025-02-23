@@ -1,1 +1,11 @@
-
+requests
+beautifulsoup4
+selenium
+telethon
+instaloader
+pandas
+numpy
+nltk
+spacy
+python-dotenv
+pyyaml
