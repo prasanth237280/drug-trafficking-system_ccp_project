@@ -9,3 +9,4 @@ nltk
 spacy
 python-dotenv
 pyyaml
+pymongo
