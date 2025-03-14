@@ -1,4 +1,8 @@
+certifi==2025.1.31
+charset-normalizer==3.4.1
 dnspython==2.7.0
+idna==3.10
+instaloader==4.14.1
 numpy==2.2.3
 pandas==2.2.3
 pyaes==1.6.1
@@ -6,7 +10,9 @@ pyasn1==0.6.1
 pymongo==4.11.2
 python-dateutil==2.9.0.post0
 pytz==2025.1
+requests==2.32.3
 rsa==4.9
 six==1.17.0
 Telethon==1.39.0
 tzdata==2025.1
+urllib3==2.3.0
