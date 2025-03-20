@@ -15,7 +15,7 @@ db = mongo_client["drug_detection"]
 collection = db["wa_mentions"]
 
 # Keywords and Patterns
-drug_keywords = ['MDMA', 'LSD', 'Mephedrone', 'buy drugs', 'narcotics', 'party favors']
+drug_keywords = ['MDMA', 'LSD', 'Mephedrone', 'buy drugs','sale', 'narcotics', 'party favors']
 suspicious_patterns = [r'for sale', r'order now', r'delivery']
 
 # Send Message
