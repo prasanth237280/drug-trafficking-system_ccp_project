@@ -13,7 +13,16 @@ api_hash = "798addea568cb787edd220cc204d7f88"
 phone = "+91 8124063917"
 
 # Keywords and patterns
-drug_keywords = ['MDMA', 'LSD', 'Mephedrone', 'buy drugs', 'narcotics', 'party favors']
+drug_keywords = [ 'MDMA', 'LSD', 'Mephedrone', 'buy drugs', 'narcotics', 'party favors',
+    'Cocaine', 'Heroin', 'Meth', 'Ecstasy', 'Ketamine', 'Fentanyl', 'Xanax', 
+    'Adderall', 'Oxycodone', 'Morphine', 'GHB', 'PCP', 'DMT', 'Psilocybin', 'K2', 'Spice',
+    'Weed', 'Marijuana', 'Pot', 'Grass', 'Ganja', 'Hash', 'Kush', 'Bud', 'Blaze', '420',
+    'Drugs', 'Pills', 'Tabs', 'Powder', 'Crystals', 'Gear', 'Stuff', 'Dope', 'Substance', 'High',
+    'Molly', 'Acid', 'Shrooms', 'Coke', 'Snow', 'Ice', 'Speed', 'Blow', 'Rock', 'Candy', 
+    'Beans', 'Special K', 'Lean', 'Bars',
+    'For sale', 'Get some', 'Hook up', 'Score', 'Cop', 'Deal', 'Drop off', 'Pick up', 
+    'Supply', 'Stash', 'Plug', 'Connect', 'Party pack', 'Goodies',
+    'Trip', 'Roll', 'Baked', 'Lit', 'Turn up', 'Chill', 'Smoke', 'Snort', 'Pop']
 suspicious_patterns = [r'for sale', r'order now', r'delivery']
 
 async def scan_telegram():
@@ -21,7 +30,8 @@ async def scan_telegram():
     await client.start(phone=phone)
     print("Connected to Telegram!")
 
-    channels = ['Moviesi', 'tonkeeper_news']
+    channels = ['TelegramTips', 'BBCNews', 'CNNBrk', 'ESPN', 'LiveSportsChannel', 'ChelseaFC',
+        'MegaDice', '22bet', 'BetwayTips', 'HealthWellness', 'WHO', 'DrJohnCampbell']
 
     mongo_client = MongoClient("mongodb+srv://Prasanth2310:Yogarajvijayabanu7280@project1.15nmf.mongodb.net/?retryWrites=true&w=majority&appName=Project1")
     db = mongo_client["drug_detection"]

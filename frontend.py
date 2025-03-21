@@ -4,11 +4,25 @@ import pandas as pd
 from pymongo import MongoClient
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import random
 
 # MongoDB Setup
 mongo_client = MongoClient("mongodb+srv://Prasanth2310:Yogarajvijayabanu7280@project1.15nmf.mongodb.net/?retryWrites=true&w=majority&appName=Project1")
 db = mongo_client["drug_detection"]
 collection = db["channel_mentions"]
+
+# Insert Dummy Data (5 Users)
+dummy_data = [
+    {"username": "rooby", "channel": "whatsapp", "risk_score": random.randint(4,8), "date": "2025-02-28"},
+    {"username": "john", "channel": "instagram", "risk_score": random.randint(4,8), "date": "2025-02-28"},
+    {"username": "naveen", "channel": "whatsapp", "risk_score": random.randint(4,8), "date": "2025-02-28"},
+    {"username": "kumar", "channel": "instagram", "risk_score": random.randint(4,8), "date": "2025-02-28"},
+    {"username": "elsa", "channel": "whatsapp", "risk_score": random.randint(4,8), "date": "2025-02-28"}
+]
+
+# Check and insert dummy data if not already present
+if collection.count_documents({}) == 0:
+    collection.insert_many(dummy_data)
 
 # Fetch All Users from MongoDB
 def get_all_users():
@@ -23,8 +37,8 @@ def plot_risk_chart(data):
     if not data:
         return
 
-    # Extract usernames and risk scores (fill missing username with channel)
-    usernames = [user.get("username") or user.get("channel", "Unknown") for user in data]
+    # Extract usernames and risk scores (handle None values)
+    usernames = [user.get("username", "Unknown") or "Unknown" for user in data]
     risk_scores = [user.get("risk_score", 0) for user in data]
 
     # Create the bar chart
