@@ -1,4 +1,4 @@
-# drug-trafficking-system_ccp_project
+# Drug detection
 # Drug Trafficking Detection on Encrypted Apps
 
 ## Overview
