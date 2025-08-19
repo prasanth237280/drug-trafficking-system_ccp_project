@@ -1,5 +1,5 @@
 # Drug detection
-# Drug Trafficking Detection on Encrypted Apps
+# Drug detection on Social Media platform
 
 ## Overview
 This project aims to combat the rising misuse of encrypted messaging and social media apps like Telegram, WhatsApp, and Instagram for drug trafficking in India. 
@@ -36,4 +36,4 @@ We’re building a software tool to:
 - Test with dummy data.
 
 ## License
-<<<<<<<<<<<<<<<<<<soon>>>>>>>>>>>>>>>>>>
+  updation soon
