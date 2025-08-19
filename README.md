@@ -29,6 +29,7 @@ We’re building a software tool to:
 
 ## Team
 -   Prasanth Yogaraj - Project Lead & Developer
+-   Hari Krishnan - Project Lead  & Developer
 ## Next Steps
 - Research APIs or tools for scraping Telegram/WhatsApp/Instagram data.
 - Design the detection algorithm.
